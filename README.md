@@ -137,14 +137,14 @@ cd path/to/dinov2_mod/folder
 ```
 Arguments:
 
---wsi_path: The path to the WSI image file.
---patch_size: Size of the image patches (default: 224).
---output_dir: Directory where the image tiles will be saved (default: outputs).
---model_type: The type of the DINOv2 model (vits14 or vitg14) (default: vits14).
---model_checkpoint: The path to the DINOv2 pretrained weights file.
---predict_model_path: The path to the logistic regression model file.
---label_map_path: The path to the label map JSON file.
---output_json_path: The output path for saving the embeddings and predictions in JSON format.
+--wsi_path: The path to the WSI image file.\n
+--patch_size: Size of the image patches (default: 224).\n
+--output_dir: Directory where the image tiles will be saved (default: outputs).\n
+--model_type: The type of the DINOv2 model (vits14 or vitg14) (default: vits14).\n
+--model_checkpoint: The path to the DINOv2 pretrained weights file.\n
+--predict_model_path: The path to the logistic regression model file.\n
+--label_map_path: The path to the label map JSON file.\n
+--output_json_path: The output path for saving the embeddings and predictions in JSON format.\n
 --model_batch_size: number of images used in one batch by the model
 
 3. Running __main__.py
@@ -153,26 +153,15 @@ Arguments:
 python -m dinov2_mod --config_path "dinov2_mod/config.json"
 ```
 
-Arguments:
-
---wsi_path: The path to the WSI image file.
---patch_size: Size of the image patches (default: 224).
---output_dir: Directory where the image tiles will be saved (default: outputs).
---model_type: The type of the DINOv2 model (vits14 or vitg14) (default: vits14).
---model_checkpoint: The path to the DINOv2 pretrained weights file.
---predict_model_path: The path to the logistic regression model file.
---label_map_path: The path to the label map JSON file.
---output_json_path: The output path for saving the embeddings and predictions in JSON format.
-
 
 ## Output
 
 After running the command, the system will:
 
--Crop the WSI image into patches.
--Extract features from the image tiles using DINOv2.
--Predict the labels for each tile using the logistic regression model.
--Save the results (embeddings and predictions) in the specified JSON file.
+-Crop the WSI image into patches.\n
+-Extract features from the image tiles using DINOv2.\n
+-Predict the labels for each tile using the logistic regression model.\n
+-Save the results (embeddings and predictions) in the specified JSON file.\n
 
 ```json
 [
