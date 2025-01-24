@@ -1,0 +1,11 @@
+{
+  "wsi_path": "/path/to/your/wsi/file.tif",
+  "patch_size": 224,
+  "output_dir": "/path/to/output/folder",
+  "model_type": "vits14",
+  "model_checkpoint": "/path/to/dinov2_model_weights.pth",
+  "predict_model_path": "/path/to/logistic_regression_model.joblib",
+  "label_map_path": "/path/to/label_map.json",
+  "output_json_path": "/path/to/output_predictions.json",
+  "model_batch_size": 128
+}
