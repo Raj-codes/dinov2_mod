@@ -5,17 +5,8 @@ setup(
     version="0.1",
     packages=find_packages(),
     include_package_data=True,
-    install_requires=[
-        "torch>=1.9.0",
-        "torchvision>=0.10.0",
-        "scikit-learn>=0.24.0",
-        "numpy",
-        "Pillow",
-        "tqdm",
-        "joblib",
-        "matplotlib",
-    ],
-    author="Your Name",
+    install_requires=[],  # Dependencies moved to requirements.txt
+    author="RAI",
     description="A custom pipeline for feature extraction and prediction using DINOv2.",
     url="https://github.com/yourusername/dinov2_mod",
     classifiers=[
@@ -23,5 +14,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    license="MIT",  # Explicitly state the MIT license
     python_requires='>=3.7',
 )
