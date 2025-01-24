@@ -37,18 +37,17 @@ def predict_labels(predict_model_path, label_map_path, test_feats, test_image_pa
     # Combine test image paths with predictions
     results = list(zip(test_image_paths, predictions_named))
 
-
     results_with_embeddings = []
     for i, (image_path, label, embedding) in enumerate(zip(test_image_paths, predictions_named, test_feats)):
         results_with_embeddings.append({
             "image_path": image_path,
             "predicted_label": label,
-            "embedding": embedding
+            "embedding": embedding.tolist()  # Convert NumPy arrays to lists for JSON serialization
         })
-    
+
     # Save results to a JSON file
     with open(output_file, "w") as f:
-        json.dump(dict(results_with_embeddings), f, indent=4)
+        json.dump(results_with_embeddings, f, indent=4)
     print(f"Results saved to {output_file}.")
 
     return results

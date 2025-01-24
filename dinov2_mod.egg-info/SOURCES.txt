@@ -1,0 +1,13 @@
+README.md
+setup.py
+dinov2_mod.egg-info/PKG-INFO
+dinov2_mod.egg-info/SOURCES.txt
+dinov2_mod.egg-info/dependency_links.txt
+dinov2_mod.egg-info/top_level.txt
+func/__init__.py
+func/feature_extraction.py
+func/image_processing.py
+func/model_initiator.py
+func/predict_labels.py
+func/train_logistic_regression.py
+tests/test_image_processing.py

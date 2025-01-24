@@ -40,6 +40,7 @@ def crop_image_to_tiles(input_file, tile_size):
         orig_width - crop_right, 
         orig_height - crop_bottom
     ))
+    print("Completed cropping")
 
     return cropped_image
 
